@@ -1,9 +1,9 @@
 (function () {
-    function MainCtrl() {
-
+    function MainCtrl(Room) {
+        this.rooms = Room.all;
     }
 
     angular
         .module('blocChat')
-        .controller('MainCtrl', MainCtrl);
+        .controller('MainCtrl', ['Room', MainCtrl]);
 })();
