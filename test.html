@@ -1,0 +1,45 @@
+<div class="container">
+    <style>
+        html, body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            height: 100%;
+            display: box;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-box;
+            box-orient: horizontal;
+            -webkit-box-orient: horizontal;
+            -moz-box-orient: horizontal;
+            -ms-box-orient: horizontal;
+        }
+        
+        .nav {
+            background: hotpink;
+            width: 200px;
+            box-flex: 0;
+            -webkit-box-flex: 0;
+            -moz-box-flex: 0;
+            -ms-box-flex: 0;
+        }
+        
+        .main-window {
+            background: lightgray;
+            box-flex: 1;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -ms-box-flex: 1;
+        }
+    </style>
+    <div class="nav">
+        nav bar
+
+    </div>
+
+    <div class='main-window'>
+        box for main window content
+    </div>
+</div>
