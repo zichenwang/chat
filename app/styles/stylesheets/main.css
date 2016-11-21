@@ -35,6 +35,18 @@ body {
   margin: auto;
 }
 /* line 36, ../sass/main.scss */
+#sidebar .title {
+  display: inline-block;
+}
+/* line 39, ../sass/main.scss */
+#sidebar .title ~ a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  background-color: #eaeaea;
+}
+/* line 46, ../sass/main.scss */
 #sidebar .room-btn {
   height: 1rem;
   width: 100%;
@@ -46,7 +58,7 @@ body {
   padding: 1rem 0 1rem 0;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 #main-content {
   height: 100%;
   width: 80%;

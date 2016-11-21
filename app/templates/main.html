@@ -1,7 +1,8 @@
 <div class="container">
     <aside id="sidebar">
         <div class="container">
-            <h3>Bloc Chat</h3>
+            <h3 class="title">Bloc Chat</h3>
+            <a href="" ng-click="main.addRoom('wa')"><span class="icon ion-plus"></span></a>
             <div ng-repeat="room in main.rooms">
                 <a href="" class="room-btn">{{room.name}}</a>
             </div>

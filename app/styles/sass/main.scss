@@ -33,6 +33,16 @@ body {
         @include size($width: 80%);
         margin: auto;
     }
+    .title {
+        display: inline-block;
+    }
+    .title ~ a {
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 1rem;
+        padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+        background-color: $color-btn;
+    }
     .room-btn {
         @include size($height: $height-btn);
         display: block;
