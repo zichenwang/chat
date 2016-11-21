@@ -1,0 +1,54 @@
+/* line 11, ../sass/main.scss */
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+/* line 16, ../sass/main.scss */
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans";
+  background-color: white;
+}
+
+/* line 22, ../sass/main.scss */
+.container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 27, ../sass/main.scss */
+#sidebar {
+  height: 100%;
+  width: 20%;
+  float: left;
+  display: inline-block;
+  background-color: #d8d8d8;
+}
+/* line 32, ../sass/main.scss */
+#sidebar .container {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+/* line 36, ../sass/main.scss */
+#sidebar .room-btn {
+  height: 1rem;
+  width: 100%;
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  background-color: #eaeaea;
+  color: #969696;
+  padding: 1rem 0 1rem 0;
+}
+
+/* line 47, ../sass/main.scss */
+#main-content {
+  height: 100%;
+  width: 80%;
+  display: inline-block;
+}

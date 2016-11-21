@@ -1,0 +1,50 @@
+$color-sidebar: #d8d8d8;
+$color-btn: #eaeaea;
+$font-color-btn: #969696;
+$height-btn: 1rem;
+$font: 'Open Sans';
+@mixin size($height: 100%, $width: 100%) {
+    height: $height;
+    width: $width;
+}
+
+html {
+    @include size();
+    font-size: 100%;
+}
+
+body {
+    @include size();
+    font-family: $font;
+    background-color: white;
+}
+
+.container {
+    @include size();
+    text-align: center;
+}
+
+#sidebar {
+    @include size($width: 20%);
+    float: left;
+    display: inline-block;
+    background-color: $color-sidebar;
+    .container {
+        @include size($width: 80%);
+        margin: auto;
+    }
+    .room-btn {
+        @include size($height: $height-btn);
+        display: block;
+        margin-top: 1rem;
+        text-decoration: none;
+        background-color: $color-btn;
+        color: $font-color-btn;
+        padding: 1rem 0 1rem 0;
+    }
+}
+
+#main-content {
+    @include size($width: 80%);
+    display: inline-block;
+}
