@@ -2,9 +2,10 @@
     <aside id="sidebar">
         <div class="container">
             <h3 class="title">Bloc Chat</h3>
-            <a href="" ng-click="main.addRoom('wa')"><span class="icon ion-plus"></span></a>
+            <a ng-click="main.open()"><span class="icon ion-plus"></span></a>
+
             <div ng-repeat="room in main.rooms">
-                <a href="" class="room-btn">{{room.name}}</a>
+                <button href="" class="btn btn-default room-btn">{{room.name}}</button>
             </div>
         </div>
     </aside>
@@ -13,4 +14,6 @@
     <section id="main-content">
 
     </section>
+
+
 </div>

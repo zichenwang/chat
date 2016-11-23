@@ -25,7 +25,7 @@ body {
 }
 
 #sidebar {
-    @include size($width: 20%);
+    @include size($width: 25%);
     float: left;
     display: inline-block;
     background-color: $color-sidebar;
@@ -35,22 +35,22 @@ body {
     }
     .title {
         display: inline-block;
+        font-size: 1.5rem;
     }
     .title ~ a {
         text-decoration: none;
         display: inline-block;
         margin-left: 1rem;
-        padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+        padding: 0.1rem 0.3rem 0.1rem 0.3rem;
         background-color: $color-btn;
     }
     .room-btn {
         @include size($height: $height-btn);
         display: block;
         margin-top: 1rem;
-        text-decoration: none;
         background-color: $color-btn;
         color: $font-color-btn;
-        padding: 1rem 0 1rem 0;
+        padding: 1rem 0 2rem 0;
     }
 }
 

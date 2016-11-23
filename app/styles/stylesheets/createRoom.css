@@ -1,0 +1,9 @@
+/* line 2, ../sass/createRoom.scss */
+#modal-body input {
+  width: 100%;
+}
+
+/* line 8, ../sass/createRoom.scss */
+#modal-footer .btn {
+  width: 50%;
+}
