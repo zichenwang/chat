@@ -1,7 +1,9 @@
 $color-sidebar: #d8d8d8;
 $color-btn: #eaeaea;
-$font-color-btn: #969696;
+$color-message: #eaeaea;
+$font-color: #969696;
 $height-btn: 1rem;
+$width-sidebar: 20%;
 $font: 'Open Sans';
 @mixin size($height: 100%, $width: 100%) {
     height: $height;
@@ -17,15 +19,18 @@ body {
     @include size();
     font-family: $font;
     background-color: white;
+    .main-container {
+        @include size();
+        padding: 0;
+    }
 }
 
 .container {
     @include size();
-    text-align: center;
 }
 
 #sidebar {
-    @include size($width: 25%);
+    @include size($width: $width-sidebar);
     float: left;
     display: inline-block;
     background-color: $color-sidebar;
@@ -49,7 +54,7 @@ body {
         display: block;
         margin-top: 1rem;
         background-color: $color-btn;
-        color: $font-color-btn;
+        color: $font-color;
         padding: 1rem 0 2rem 0;
     }
 }
@@ -57,4 +62,20 @@ body {
 #main-content {
     @include size($width: 80%);
     display: inline-block;
+    .message {
+        @includ size();
+        position: relative;
+        background-color: $color-message;
+        .container {
+            margin-top: 0.5rem;
+        }
+        .sent-time {
+            @include size($width: 20%);
+            text-align: right;
+            float: right;
+            position: relative;
+            top: 1rem;
+            color: $font-color;
+        }
+    }
 }

@@ -1,45 +1,50 @@
-/* line 11, ../sass/main.scss */
+/* line 13, ../sass/main.scss */
 html {
   height: 100%;
   width: 100%;
   font-size: 100%;
 }
 
-/* line 16, ../sass/main.scss */
+/* line 18, ../sass/main.scss */
 body {
   height: 100%;
   width: 100%;
   font-family: "Open Sans";
   background-color: white;
 }
-
 /* line 22, ../sass/main.scss */
+body .main-container {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+/* line 28, ../sass/main.scss */
 .container {
   height: 100%;
   width: 100%;
-  text-align: center;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 #sidebar {
   height: 100%;
-  width: 25%;
+  width: 20%;
   float: left;
   display: inline-block;
   background-color: #d8d8d8;
 }
-/* line 32, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 #sidebar .container {
   height: 100%;
   width: 80%;
   margin: auto;
 }
-/* line 36, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 #sidebar .title {
   display: inline-block;
   font-size: 1.5rem;
 }
-/* line 40, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 #sidebar .title ~ a {
   text-decoration: none;
   display: inline-block;
@@ -47,7 +52,7 @@ body {
   padding: 0.1rem 0.3rem 0.1rem 0.3rem;
   background-color: #eaeaea;
 }
-/* line 47, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 #sidebar .room-btn {
   height: 1rem;
   width: 100%;
@@ -58,9 +63,29 @@ body {
   padding: 1rem 0 2rem 0;
 }
 
-/* line 57, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 #main-content {
   height: 100%;
   width: 80%;
   display: inline-block;
+}
+/* line 65, ../sass/main.scss */
+#main-content .message {
+  @includ size();
+  position: relative;
+  background-color: #eaeaea;
+}
+/* line 69, ../sass/main.scss */
+#main-content .message .container {
+  margin-top: 0.5rem;
+}
+/* line 72, ../sass/main.scss */
+#main-content .message .sent-time {
+  height: 100%;
+  width: 20%;
+  text-align: right;
+  float: right;
+  position: relative;
+  top: 1rem;
+  color: #969696;
 }

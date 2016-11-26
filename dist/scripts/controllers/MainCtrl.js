@@ -1,5 +1,5 @@
 (function () {
-    function MainCtrl(Room, $uibModal, $log) {
+    function MainCtrl(Room, Message, $uibModal, $log) {
         this.rooms = Room.all;
 
         this.open = function () {
@@ -20,9 +20,18 @@
                 $log.info('Modal dismissed at: ' + new Date());
             });
         };
+
+        this.room = null;
+        this.messages = [];
+
+        this.getMessages = function (room) {
+            this.room = room.name;
+            this.messages = Message.getByRoomId(room.$id);
+            console.log(this.messages);
+        }
     }
 
     angular
         .module('blocChat')
-        .controller('MainCtrl', ['Room', '$uibModal', '$log', MainCtrl]);
+        .controller('MainCtrl', ['Room', 'Message', '$uibModal', '$log', MainCtrl]);
 })();
