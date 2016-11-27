@@ -4,7 +4,7 @@
             <h3 class="title">Bloc Chat</h3>
             <a ng-click="main.open()"><span class="icon ion-plus"></span></a>
 
-            <div ng-repeat="room in main.rooms">
+            <div ng-repeat="room in main.rooms track by $index">
                 <button class="btn btn-default room-btn" ng-click="main.getMessages(room)">{{room.name}}</button>
             </div>
         </div>
@@ -14,7 +14,7 @@
     <section id="main-content">
         <div class="container">
             <h3>{{main.room}}</h3>
-            <div class="message" ng-repeat="msg in main.messages">
+            <div class="message" ng-repeat="msg in main.messages track by $index">
                 <div class="container">
                     <div class="sent-time">{{msg.sentAt}}</div>
                     <h4>{{msg.username}}</h4>

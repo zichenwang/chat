@@ -73,13 +73,12 @@ body .main-container {
 #main-content .message {
   @includ size();
   position: relative;
-  background-color: #eaeaea;
 }
-/* line 69, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 #main-content .message .container {
   margin-top: 0.5rem;
 }
-/* line 72, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 #main-content .message .sent-time {
   height: 100%;
   width: 20%;
@@ -88,4 +87,22 @@ body .main-container {
   position: relative;
   top: 1rem;
   color: #969696;
+}
+/* line 80, ../sass/main.scss */
+#main-content .message:nth-child(even) {
+  background-color: #eaeaea;
+}
+/* line 83, ../sass/main.scss */
+#main-content .message:nth-child(odd) {
+  background-color: lightgray;
+}
+
+/* line 88, ../sass/main.scss */
+.alert {
+  color: firebrick;
+}
+
+/* line 93, ../sass/main.scss */
+.modal-footer button {
+  width: 100%;
 }
