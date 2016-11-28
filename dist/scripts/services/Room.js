@@ -9,7 +9,6 @@
             };
 
             rooms.$add(newRoom);
-            console.log(rooms.length);
         };
 
 

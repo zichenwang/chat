@@ -106,3 +106,27 @@ body .main-container {
 .modal-footer button {
   width: 100%;
 }
+
+/* line 98, ../sass/main.scss */
+footer {
+  width: 80%;
+  position: fixed;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+}
+/* line 104, ../sass/main.scss */
+footer #write-msg {
+  display: inline-block;
+  height: 50px;
+  width: 90%;
+  padding: 0.5rem;
+  padding-left: 1rem;
+}
+/* line 110, ../sass/main.scss */
+footer #send-msg-btn {
+  display: inline-block;
+  height: 50px;
+  width: 9.5%;
+  margin-left: 0;
+}

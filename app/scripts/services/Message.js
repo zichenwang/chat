@@ -12,6 +12,11 @@
                 });
 
                 return msgs;
+            },
+
+            send: function (newMessage) {
+                // Send method logic
+                messages.$add(newMessage);
             }
         };
     }
